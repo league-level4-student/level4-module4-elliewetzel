@@ -11,7 +11,11 @@ public abstract class Polymorph {
    	 this.y = y;
     }
     
-    public void update(){
+    /*public Polymorph(int x2, int y2, int width, int height) {
+		// TODO Auto-generated constructor stub
+	}*/
+
+	public void update(){
    	 
     }
     

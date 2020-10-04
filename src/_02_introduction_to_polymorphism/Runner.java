@@ -30,11 +30,9 @@ public class Runner {
 	public static void main(String[] args) {
 		//Polymorphism is when one object has the ability to act like another object.
 		System.out.println("POLYMORPHISM");
-		
 		//animal is an Animal reference pointing to an Animal object 
 		Animal animal = new Animal();
 		animal.speak(); //prints "I am an animal"
-		
 		//animal can also point to a Dog object since Dog extends Animal
 		animal = new Dog(); 
 		animal.speak(); //prints "Woof!"
