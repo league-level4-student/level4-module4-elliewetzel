@@ -27,7 +27,7 @@ public class PolymorphWindow extends JPanel implements ActionListener, MouseList
     }
     
     public void buildWindow(){
-   	 window = new JFrame("Time To Morph!");
+   	 window = new JFrame("IT'S MORPHIN' TIME!");
    	 window.add(this);
    	 window.getContentPane().setPreferredSize(new Dimension(500, 500));
    	 window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
