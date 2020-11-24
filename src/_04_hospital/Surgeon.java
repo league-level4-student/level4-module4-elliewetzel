@@ -3,7 +3,7 @@ package _04_hospital;
 import java.util.ArrayList;
 
 public class Surgeon extends Doctor {
-	protected ArrayList<Patient> pat = new ArrayList<Patient>();
+	protected ArrayList<Patient> p = new ArrayList<Patient>();
 	
 	public boolean performsSurgery() {
 		// TODO Auto-generated method stub
@@ -17,10 +17,19 @@ public class Surgeon extends Doctor {
 	
 	public void assignPatient(Patient patient) {
 		// TODO Auto-generated method stub
-		if(pat.size()>3) {
+		if(p.size()>3) {
 			System.out.println("Full on patients");
 		}
 		else {
-			pat.add(patient);
+			p.add(patient);
 		}
 	}
+	public ArrayList<Patient> getPatients() {
+		return p;
+	}
+	public void doMed() {
+		for(int i = 0; i < p.size(); i++) {
+			p.get(i).checkPulse();
+		}
+	}
+}

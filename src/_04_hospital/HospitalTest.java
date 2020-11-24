@@ -49,6 +49,8 @@ public class HospitalTest extends TestCase {
 
 	/* A doctor has a list of patients */
 	public void testAssignDoctor() throws Exception {
+		//check out variable type
+		//re-read input before method
 		Doctor testDoctor = new GeneralPractitioner();
 		testDoctor.assignPatient(new Patient());
 		assertEquals(1, testDoctor.getPatients().size());
@@ -75,7 +77,7 @@ public class HospitalTest extends TestCase {
 		testDoctor.assignPatient(macky);
 		assertEquals(false, max.feelsCaredFor());
 		assertEquals(false, macky.feelsCaredFor());
-		testDoctor.doMedicine();
+		testDoctor.doMed();
 		assertEquals(true, max.feelsCaredFor());
 		assertEquals(true, macky.feelsCaredFor());
 	}

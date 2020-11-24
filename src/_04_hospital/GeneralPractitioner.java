@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class GeneralPractitioner {
 
-	protected ArrayList<Patient> pat = new ArrayList<Patient>();
+	protected ArrayList<Patient> p = new ArrayList<Patient>();
 	public boolean performsSurgery() {
 		// TODO Auto-generated method stub
 		return false;
@@ -16,11 +16,11 @@ public class GeneralPractitioner {
 	}
 	public void assignPatient(Patient patient) {
 		// TODO Auto-generated method stub
-		if(pat.size()>3) {
+		if(p.size()>3) {
 			System.out.println("Full on patients");
 		}
 		else {
-			pat.add(patient);
+			p.add(patient);
 		}
 	}
 }
