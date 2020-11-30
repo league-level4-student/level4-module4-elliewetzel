@@ -44,4 +44,10 @@ public class Hospital {
 			}
 		}
 	}
+
+	public void addDoctor(GeneralPractitioner generalPractitioner) {
+		// TODO Auto-generated method stub
+		
+	}
+	
 }

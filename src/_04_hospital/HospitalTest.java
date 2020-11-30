@@ -51,7 +51,7 @@ public class HospitalTest extends TestCase {
 	public void testAssignDoctor() throws Exception {
 		//check out variable type
 		//re-read input before method
-		Doctor testDoctor = new GeneralPractitioner();
+		Doctor testDoctor = new Doctor(); /*GeneralPractitioner();*/
 		testDoctor.assignPatient(new Patient());
 		assertEquals(1, testDoctor.getPatients().size());
 		testDoctor.assignPatient(new Patient());
@@ -70,7 +70,7 @@ public class HospitalTest extends TestCase {
 
 	/* Doctors work on their Patients by checking their pulses. */
 	public void testDoctorsWork() throws Exception {
-		Doctor testDoctor = new GeneralPractitioner();
+		Doctor testDoctor = new Doctor(); /*GeneralPractitioner();*/
 		Patient max = new Patient();
 		Patient macky = new Patient();
 		testDoctor.assignPatient(max);
@@ -99,12 +99,22 @@ assertTrue(testDoctor.getPatients().size() == 3);
 
 	public void test8Patients() throws Exception {
 		// TODO: add 3 doctors to hospital
-
+		Doctor one = new Doctor();
+		Doctor two = new Doctor();
+		Doctor three = new Doctor();
 		// TODO: add 8 patients to hospital
-
+		Patient pat1 = new Patient();
+		Patient pat2 = new Patient();
+		Patient pat3 = new Patient();
+		Patient pat4 = new Patient();
+		Patient pat5 = new Patient();
+		Patient pat6 = new Patient();
+		Patient pat7 = new Patient();
+		Patient pat8 = new Patient();
 		// hospital assigns patients to doctors
 		testHospital.assignPatientsToDoctors();
 		// hospital.getDoctors shows doctors have 3, 3, 2 patients
+		
 		List<Doctor> testDoctors = testHospital.getDoctors();
 		assertEquals(3, testDoctors.get(0).getPatients().size());
 		assertEquals(3, testDoctors.get(1).getPatients().size());

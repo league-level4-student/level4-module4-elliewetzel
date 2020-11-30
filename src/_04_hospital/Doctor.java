@@ -11,7 +11,7 @@ public class Doctor {
 	public boolean makesHouseCalls() {
 		return false;
 	}
-	public void assignPatient(Patient patient)  throws DoctorFullException{
+	public void assignPatient(Patient patient) throws DoctorFullException{
 		if(p.size()>=3) {
 			throw new DoctorFullException();
 			
