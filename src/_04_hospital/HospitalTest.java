@@ -18,7 +18,7 @@ import junit.framework.TestCase;
 public class HospitalTest extends TestCase {
 
 	Hospital testHospital = new Hospital();
-
+//something wrong here
 	public void testAddDoctor() {
 		testHospital.addDoctor(new GeneralPractitioner());
 		testHospital.addDoctor(new GeneralPractitioner());
@@ -102,6 +102,10 @@ assertTrue(testDoctor.getPatients().size() == 3);
 		Doctor one = new Doctor();
 		Doctor two = new Doctor();
 		Doctor three = new Doctor();
+		
+		testHospital.addDoctor(one);
+		testHospital.addDoctor(two);
+		testHospital.addDoctor(three);
 		// TODO: add 8 patients to hospital
 		Patient pat1 = new Patient();
 		Patient pat2 = new Patient();
@@ -111,10 +115,18 @@ assertTrue(testDoctor.getPatients().size() == 3);
 		Patient pat6 = new Patient();
 		Patient pat7 = new Patient();
 		Patient pat8 = new Patient();
+		
+		testHospital.addPatient(pat1);
+		testHospital.addPatient(pat2);
+		testHospital.addPatient(pat3);
+		testHospital.addPatient(pat4);
+		testHospital.addPatient(pat5);
+		testHospital.addPatient(pat6);
+		testHospital.addPatient(pat7);
+		testHospital.addPatient(pat8);
 		// hospital assigns patients to doctors
 		testHospital.assignPatientsToDoctors();
 		// hospital.getDoctors shows doctors have 3, 3, 2 patients
-		
 		List<Doctor> testDoctors = testHospital.getDoctors();
 		assertEquals(3, testDoctors.get(0).getPatients().size());
 		assertEquals(3, testDoctors.get(1).getPatients().size());

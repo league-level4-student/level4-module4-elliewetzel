@@ -35,7 +35,7 @@ public class Hospital {
 		for (int i = 0; i < doc.size(); i++) {
 			while (patIndex<pat.size()) {
 				if(doc.get(i).getPatients().size()<3) {
-				doc.get(i).assignPaitent(pat.get(patIndex));
+				doc.get(i).assignPatient(pat.get(patIndex));
 				patIndex++;
 				}
 				else {
