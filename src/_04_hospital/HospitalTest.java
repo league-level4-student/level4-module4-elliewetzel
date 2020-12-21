@@ -18,7 +18,7 @@ import junit.framework.TestCase;
 public class HospitalTest extends TestCase {
 
 	Hospital testHospital = new Hospital();
-//something wrong here
+
 	public void testAddDoctor() {
 		testHospital.addDoctor(new GeneralPractitioner());
 		testHospital.addDoctor(new GeneralPractitioner());
