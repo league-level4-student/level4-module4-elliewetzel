@@ -43,8 +43,6 @@ public class Hospital {
 	}
 }*/
 
-
-
 ArrayList<Doctor> doc = new ArrayList<Doctor>(); 
 ArrayList<Patient> pat = new ArrayList<Patient>(); 
 public void addDoctor(Doctor d) {
@@ -70,6 +68,5 @@ public void assignPatientsToDoctors() {
 			}
 		}
 	}
-}
-
+	}
 }
