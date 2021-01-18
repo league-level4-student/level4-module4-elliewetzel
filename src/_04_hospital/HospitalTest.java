@@ -15,7 +15,7 @@ import junit.framework.TestCase;
  * 4. doctors can have no more than 3 patients
  */
 
-public class HospitalTest extends Tes tCase {
+public class HospitalTest extends TestCase {
 
 	Hospital testHospital = new Hospital();
 
