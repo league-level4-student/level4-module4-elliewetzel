@@ -14,7 +14,7 @@ public List<Patient> getPatients() {
 	return pat;
 }
 public void addDoctor(GeneralPractitioner generalPractitioner) {
-	doc.add(generalPractitioner);
+	doc.addAll(generalPractitioner);
 	}
 public void addPatient(Patient patient) {
 	pat.add(patient);
